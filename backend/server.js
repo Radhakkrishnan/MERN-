@@ -1,10 +1,10 @@
 const express = require("express")
 const cors = require("cors")
 const { dbConnnect } = require("./src/config/dbConnect")
-const dotenv = require("dotenv").config()
+require("dotenv").config()
 const authRoutes = require("./src/routes/authRoutes")
 const userRoutes = require("./src/routes/userRoutes")
-dotenv.config(); 
+ 
 const app = express()
 dbConnnect()
 
@@ -23,6 +23,6 @@ app.get("/", (req, res) => {
 app.use("/api/auth",authRoutes)
 app.use("/api/user",userRoutes)
 
-const PORT = 3000
+const PORT = process.env.PORT || 5000
 
 export default app;
