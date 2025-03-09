@@ -5,7 +5,7 @@ import LoginPage from './components/LoginPage'
 import CreateuserPage from './components/CreateuserPage'
 import FacultyPage from './components/FacultyPage'
 import StudentPage from './components/StudentPage'
-import CreateStudent from './components/createStudent'
+import CreateStudent from './components/CreateStudent'
 import Studentprofile from './components/Studentprofile'
 
 function App() {
