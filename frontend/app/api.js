@@ -1,5 +1,5 @@
 import axios from 'axios' 
-const URL = 'http://localhost:3000'
+const URL = import.meta.env.VITE_BACKEND_URL;
 
 export async function createUser(user){
     try{
