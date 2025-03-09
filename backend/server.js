@@ -4,9 +4,11 @@ const { dbConnnect } = require("./src/config/dbConnect")
 const dotenv = require("dotenv").config()
 const authRoutes = require("./src/routes/authRoutes")
 const userRoutes = require("./src/routes/userRoutes")
-
+dotenv.config(); 
 const app = express()
 dbConnnect()
+
+
 
 
 
